@@ -5,7 +5,7 @@ STM32F411_Project Test
 ### setting
 
 *Board 선택*
-![STM32F411 Board Select](img/F2.PNG) <br>
+![STM32F411 Board Select](Screenshot/board_pick.PNG) <br>
 
 
 
