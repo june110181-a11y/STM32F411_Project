@@ -80,4 +80,25 @@ $$
 ![STM32F411 블럭도](img/F4.PNG)
 ![STM32F411 블럭도](img/F5.PNG)  <br>
 
+
+<p align="center">
+  <img src="img/F2.PNG">
+</p>
+
+<p align="center">
+  <img src="img/F2.PNG" width="80%">
+</p>
+
+<p align="center">
+  <img src="img/F2.PNG" width="200">
+</p>
+
+<p align="center">
+  <img src="img/F2.PNG"  height="20%">
+</p>
+
+<p align="center">
+  <img src="img/F2.PNG"  height="200">
+</p>
+
 ---
