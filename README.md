@@ -71,3 +71,9 @@ $$
 \sum_{i=1}^{n} x_i = x_1 + x_2 + ... + x_n
 $$
 
+
+#STM32F411 Project
+
+## Hardware
+
+![STM32F411 블럭도].(img/F2.PNG)
