@@ -5,7 +5,7 @@ STM32F411_Project Test
 ### setting
 
 *Board 선택*
-![STM32F411 Board Select](Screenshot/board_pick.png) <br>
+![STM32F411 Board Select](Screenshot/board_pick.png) <br> <br>
 
 
 *RCC 설정*
