@@ -655,21 +655,21 @@ SFR: 저장 공간이긴 한데, 이 공간에 값을 쓰거나 읽는 행위 �
 #### 12. HAL_Delay(1000); 실행
 <img src="./img/F411_R_012.png"> <br>
 
-#### 13. Port A설정;
+#### 13. Port A설정
 <img src="./img/GPIO_Control/PA5_INIT.png"> <br>
 
-#### 14. PA 6설정;
+#### 14. PA 6설정
 <img src="./img/GPIO_Control/PA6_Setting.png"> <br>
 
-#### 15. PA6 ON설정;
+#### 15. PA6 ON설정
 <img src="./img/GPIO_Control/PA6_ON_Code.png"> <br>
 
-#### 16. PA6 Scope HIGH관찰;
+#### 16. PA6 Scope HIGH관찰
 <img src="./img/GPIO_Control/PA6_ON_Scope.jpg"> <br>
 
-#### 17. PA6 OFF설정;
+#### 17. PA6 OFF설정
 <img src="./img/GPIO_Control/PA6_OFF_Code.png"> <br>
 
-#### 18. PA6 Scope LOW관찰;
+#### 18. PA6 Scope LOW관찰
 <img src="./img/GPIO_Control/PA6OFFN_Scope.jpg"> <br>
 </details>
