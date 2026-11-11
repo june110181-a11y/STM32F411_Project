@@ -90,7 +90,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-int counter = 0;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -98,7 +98,6 @@ int counter = 0;
   while (1)
   {
     /* USER CODE END WHILE */
-	  counter++;
 	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
 	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
