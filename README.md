@@ -656,20 +656,20 @@ SFR: 저장 공간이긴 한데, 이 공간에 값을 쓰거나 읽는 행위 �
 <img src="./img/F411_R_012.png"> <br>
 
 #### 13. Port A설정;
-<img src="./GPIO_Control/img/PA5_INIT.png"> <br>
+<img src="./img/GPIO_Control/img/PA5_INIT.png"> <br>
 
 #### 14. PA 6설정;
-<img src="./GPIO_Control/img/PA6_Setting.png"> <br>
+<img src="./img/GPIO_Control/img/PA6_Setting.png"> <br>
 
 #### 15. PA6 ON설정;
-<img src="./GPIO_Control/img/PA6_ON_Code.png"> <br>
+<img src="./img/GPIO_Control/img/PA6_ON_Code.png"> <br>
 
 #### 16. PA6 Scope HIGH관찰;
-<img src="./GPIO_Control/img/PA6_ON_Scope.jpg"> <br>
+<img src="./img/GPIO_Control/img/PA6_ON_Scope.jpg"> <br>
 
 #### 17. PA6 OFF설정;
-<img src="./GPIO_Control/img/PA6_OFF_Code.png"> <br>
+<img src="./img/GPIO_Control/img/PA6_OFF_Code.png"> <br>
 
 #### 18. PA6 Scope LOW관찰;
-<img src="./GPIO_Control/img/PA6OFFN_Scope.jpg"> <br>
+<img src="./img/GPIO_Control/img/PA6OFFN_Scope.jpg"> <br>
 </details>
