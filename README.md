@@ -23,16 +23,15 @@ STM32F411_Project Test
 
 ## Table of Contents
 - [1. Architecture](#1-Architecture)
-- [2. MemoryMap](#2-MemoryMap)
-- [3. Register](#3-Register)
-- [4. Test](#4-Test)
+- [2. CLOCK](#2-CLOCK)
+- [3. MemoryMap](#3-MemoryMap)
+- [4. Register](#4-Register)
+- [5. Test](#5-Test)
 
 ## 1. Architecture
 
 <details>
 <summary>F411</summary>
-
-## 2. MemoryMap 
 
 #### 메모리 및 버스 아키텍처
 
