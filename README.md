@@ -25,7 +25,7 @@ STM32F411_Project Test
 - [1. Architecture](#1-Architecture)
 - [2. CLOCK](#2-CLOCK)
 - [3. MemoryMap](#3-MemoryMap)
-- [4. GPIO](#4-Register)
+- [4. Register](#4-Register)
 - [5. Test](#5-Test)
 
 ## 1. Architecture
@@ -194,7 +194,7 @@ USART 주변 장치는 내부 16 MHz 오실레이터(HSI) 주파수에서 작동
 <img src="./img/011-1.png" width="85%"> <br>
 </details>
 
-## 4. GPIO
+## 4. Register
 
 <details>
 <summary>F411</summary>
