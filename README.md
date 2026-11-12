@@ -23,7 +23,7 @@ STM32F411_Project Test
 
 ## Table of Contents
 - [1. Architecture](#1-architecture)
-- [2.MemoryMap](#2-memorymap)
+- [2. MemoryMap](#2-memorymap)
 - [3.Register](#3-register)
 - [4.Test](#4-test)
 
@@ -32,7 +32,7 @@ STM32F411_Project Test
 <details>
 <summary>F411</summary>
 
-## 2.MemoryMap 
+## 2. MemoryMap 
 
 #### 메모리 및 버스 아키텍처
 
