@@ -120,25 +120,6 @@ long unsigned int echo(void)
    else return 0;
 }
 
-//uint32_t echo(void) {
-//      uint32_t start_tick, start_time, end_time;
-//
-//      // ECHO HIGH 대기 (최대 10ms)
-//      start_tick = HAL_GetTick();
-//      while (HAL_GPIO_ReadPin(Echo_GPIO_Port, Echo_Pin) == GPIO_PIN_RESET) {
-//          if ((HAL_GetTick() - start_tick) > 10) return 0;  // 10ms 초과 → 실패
-//      }
-//      start_time = __HAL_TIM_GET_COUNTER(&htim1);
-//
-//      // ECHO LOW 대기 (최대 30ms = HC-SR04 최대 측정 시간)
-//      start_tick = HAL_GetTick();
-//      while (HAL_GPIO_ReadPin(Echo_GPIO_Port, Echo_Pin) == GPIO_PIN_SET) {
-//          if ((HAL_GetTick() - start_tick) > 30) return 0;  // 30ms 초과 → 범위 초과
-//      }
-//      end_time = __HAL_TIM_GET_COUNTER(&htim1);
-//
-//      return end_time - start_time;
-//  }
 /* USER CODE END 0 */
 
 /**
@@ -180,16 +161,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  printf("GOGO!");
 	  trig();
-	  delay_us(200);
 	  echo_time = echo();
 		  if( echo_time != 0){
 			  dist = (int)(17 * echo_time / 100);
 			  printf("Distance = %d(mm)\n", dist);
 		  }
 		  else printf("Out of Range!\n");
-	  printf("End!\n");
 	  HAL_Delay(300);
     /* USER CODE END WHILE */
 
