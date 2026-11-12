@@ -24,8 +24,8 @@ STM32F411_Project Test
 ## Table of Contents
 - [1. Architecture](#1-Architecture)
 - [2. MemoryMap](#2-MemoryMap)
-- [3.Register](#3-register)
-- [4.Test](#4-test)
+- [3. Register](#3-Register)
+- [4. Test](#4-Test)
 
 ## 1. Architecture
 
@@ -94,7 +94,7 @@ APB1 및 APB2의 최대 동작 주파수에 대한 자세한 내용은 해당 �
 
 </details>
 
-## 3.MemoryMap
+## 3. MemoryMap
 
 <details>
 
@@ -307,7 +307,7 @@ I/O 포트가 아날로그 구성으로 설정된 경우:
 
 </details>
 
-## 5.Test (F411)
+## 5. Test (F411)
 
 <details>
 <summary>F411</summary>
