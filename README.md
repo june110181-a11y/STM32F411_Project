@@ -22,7 +22,7 @@ STM32F411_Project Test
    - [RM0383 Reference Manual : STM32F411xC/E advanced Arm  -based 32-bit MCUs](https://www.st.com/resource/en/reference_manual/rm0383-stm32f411xce-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 
 ## Table of Contents
-- [1.Architecture](#1.Architecture)
+- [1.Architecture](#-1.Architecture)
 - [2.MemoryMap](#2.MemoryMap)
 - [3.Register](#3-register)
 - [4.Test](#4-test)
