@@ -1383,3 +1383,39 @@ org.eclipse.core.runtime.CoreException: attempt to set description for a project
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1415)
 !SUBENTRY 1 org.eclipse.cdt.core 4 -1 2026-11-12 15:18:09.854
 !MESSAGE attempt to set description for a project which does not exist or not open
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-11-12 17:07:59.075
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-11-12 17:07:59.076
+!MESSAGE port: 
+!SESSION 2026-11-13 01:09:02.382 -----------------------------------------------
+eclipse.buildId=Version 2.2.0
+java.version=21.0.10
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\june1\STM32F411\.cproject
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\june1\STM32F411\.cproject
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-11-13 01:09:10.092
+!MESSAGE Log4j2 initialized with config file C:\Users\june1\STM32F411\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-11-13 01:09:17.256
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-13 01:09:21.093
+!MESSAGE Indexed 'Blink' (20 sources, 116 headers) in 2.44 sec: 11,052 declarations; 41,057 references; 5 unresolved inclusions; 1,035 syntax errors; 1,157 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-13 01:09:25.522
+!MESSAGE Indexed 'HC_SR04' (22 sources, 120 headers) in 1.72 sec: 12,776 declarations; 62,488 references; 1 unresolved inclusions; 92 syntax errors; 238 unresolved names (0.32%)
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-11-13 01:09:25.962
+!MESSAGE Executed PowerShell command powershell.exe -Command "Get-CimInstance -ClassName Win32_SerialPort | Select-Object -ExpandProperty DeviceID":
+
+
+!ENTRY com.st.stm32cube.ide.mpu.remote.serial 1 1 2026-11-13 01:09:25.963
+!MESSAGE port: 
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-11-13 01:09:26.675
+!MESSAGE Indexed 'HC_SR04_pt1' (22 sources, 120 headers) in 1.15 sec: 12,761 declarations; 62,395 references; 1 unresolved inclusions; 92 syntax errors; 238 unresolved names (0.32%)
