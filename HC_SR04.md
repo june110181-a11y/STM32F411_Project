@@ -30,6 +30,10 @@ Echo Pin을 GPIO Input으로 설정하고, User label을 설정해준다.
 
 ![](img/HC_SR04_img/tirg_Echo_Pin_Set.png)
 
+#### NUCLEO-F411RE PinMap
+
+![](img/F411RE_PinMap.png)
+
 ### Code / Debug
 
 USART를 통해 printf를 보기 위해 <stdio.h>를 include한다.
