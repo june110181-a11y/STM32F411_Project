@@ -26,7 +26,7 @@ STM32F411_Project Test
 - [2. CLOCK](#2-clock)
 - [3. MemoryMap](#3-memorymap)
 - [4. Register](#4-register)
-- [5. Test (F411)](#5-test-f411)
+- [5. Test](#5-test)
 
 ## 1. Architecture
 
@@ -306,7 +306,7 @@ I/O 포트가 아날로그 구성으로 설정된 경우:
 
 </details>
 
-## 5. Test (F411)
+## 5. Test
 
 <details>
 <summary>F411</summary>
