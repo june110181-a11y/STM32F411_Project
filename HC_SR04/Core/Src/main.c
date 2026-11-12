@@ -108,17 +108,38 @@ void trig(void)
 * @brief echo 신호가 HIGH를 유지하는 시간을 (㎲)단위로 측정하여 리턴한다.
 * @param no param(void)
 */
-//long unsigned int echo(void)
-//{
-//   long unsigned int echo = 0;
+long unsigned int echo(void)
+{
+   long unsigned int echo = 0;
+
+   while(HAL_GPIO_ReadPin(Echo_GPIO_Port, Echo_Pin) == LOW){}
+        __HAL_TIM_SET_COUNTER(&htim1, 0);
+        while(HAL_GPIO_ReadPin(Echo_GPIO_Port, Echo_Pin) == HIGH);
+        echo = __HAL_TIM_GET_COUNTER(&htim1);
+   if( echo >= 240 && echo <= 23000 ) return echo;
+   else return 0;
+}
+
+//uint32_t echo(void) {
+//      uint32_t start_tick, start_time, end_time;
 //
-//   while(HAL_GPIO_ReadPin(ECHO1_GPIO_Port, ECHO1_Pin) == LOW){}
-//        __HAL_TIM_SET_COUNTER(&htim1, 0);
-//        while(HAL_GPIO_ReadPin(ECHO1_GPIO_Port, ECHO1_Pin) == HIGH);
-//        echo = __HAL_TIM_GET_COUNTER(&htim1);
-//   if( echo >= 240 && echo <= 23000 ) return echo;
-//   else return 0;
-//}
+//      // ECHO HIGH 대기 (최대 10ms)
+//      start_tick = HAL_GetTick();
+//      while (HAL_GPIO_ReadPin(Echo_GPIO_Port, Echo_Pin) == GPIO_PIN_RESET) {
+//          if ((HAL_GetTick() - start_tick) > 10) return 0;  // 10ms 초과 → 실패
+//      }
+//      start_time = __HAL_TIM_GET_COUNTER(&htim1);
+//
+//      // ECHO LOW 대기 (최대 30ms = HC-SR04 최대 측정 시간)
+//      start_tick = HAL_GetTick();
+//      while (HAL_GPIO_ReadPin(Echo_GPIO_Port, Echo_Pin) == GPIO_PIN_SET) {
+//          if ((HAL_GetTick() - start_tick) > 30) return 0;  // 30ms 초과 → 범위 초과
+//      }
+//      end_time = __HAL_TIM_GET_COUNTER(&htim1);
+//
+//      return end_time - start_time;
+//  }
+/* USER CODE END 0 */
 
 /**
   * @brief  The application entry point.
@@ -159,12 +180,22 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  printf("GOGO!");
 	  trig();
 	  delay_us(200);
+	  echo_time = echo();
+		  if( echo_time != 0){
+			  dist = (int)(17 * echo_time / 100);
+			  printf("Distance = %d(mm)\n", dist);
+		  }
+		  else printf("Out of Range!\n");
+	  printf("End!\n");
+	  HAL_Delay(300);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
   }
+
   /* USER CODE END 3 */
 }
 
@@ -326,6 +357,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : Echo_Pin */
+  GPIO_InitStruct.Pin = Echo_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(Echo_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
