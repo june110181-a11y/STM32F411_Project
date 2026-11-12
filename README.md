@@ -25,7 +25,7 @@ STM32F411_Project Test
 - [1. Architecture](#1-Architecture)
 - [2. CLOCK](#2-CLOCK)
 - [3. MemoryMap](#3-MemoryMap)
-- [4. Register](#4-Register)
+- [4. GPIO](#4-Register)
 - [5. Test](#5-Test)
 
 ## 1. Architecture
