@@ -10,6 +10,7 @@
 <img src="img/HC_SR04_img/HC_SR04_Pinout.png" width="30%"> <img src="img/HC_SR04_img/센서_이론 그림.png" width="58%">
 
 ![](img/HC_SR04_img/sensor_waveform_theroy.png)
+
 Trig 신호는 10us 이상의 Width가 필요하고, Trig 신호 사이의 Delay는 60ms이상이 필요함.
 
 
