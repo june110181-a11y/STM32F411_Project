@@ -83,7 +83,7 @@ APB1 및 APB2의 최대 동작 주파수에 대한 자세한 내용은 해당 �
 
 </details>
 
-## 2.CLOCK
+## 2. CLOCK
 
 <details>
 <summary>F411</summary>
