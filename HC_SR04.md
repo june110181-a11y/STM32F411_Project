@@ -1,5 +1,6 @@
 # HC_SR04 초음파 센서
 
+## 1. HC_SR04 Theory
 
 ![](img/HC_SR04_img/HC_SR04_img.png) <img src="img/HC_SR04_img/HC_SR04_Schematic.png" width="50%">
 
@@ -13,14 +14,14 @@
 
 Trig 신호는 10us 이상의 Width가 필요하고, Trig 신호 사이의 Delay는 60ms이상이 필요함.
 
-## STM32 Implementation
-### CLK Setting
+## 2. STM32 Implementation
+### 2-1. CLK Setting
 
 ![](img/HC_SR04_img/RCC_set.png)
 
 ![](img/HC_SR04_img/CLK_Configuration.png)
 
-### Trigger Pin / Echo Pin Set
+### 2-2. Trigger Pin / Echo Pin Set
 
 Trigger Pin을 GPIO Output으로 설정하고, User label을 설정해준다.
 
@@ -34,7 +35,7 @@ Echo Pin을 GPIO Input으로 설정하고, User label을 설정해준다.
 
 ![](img/F411RE_PinMap.png)
 
-### Code / Debug
+### 2-3. Code / Debug
 
 USART를 통해 printf를 보기 위해 <stdio.h>를 include한다.
 
