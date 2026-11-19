@@ -3,7 +3,7 @@
 
 ## 1. HC_SR04 Theory
 
-![](img/HC_SR04_img/HC_SR04_img.png) <img src="img/HC_SR04_img/HC_SR04_Schematic.png" width="50%">
+![](../img/HC_SR04_img/HC_SR04_img.png) <img src="img/HC_SR04_img/HC_SR04_Schematic.png" width="50%">
 
 ![](img/HC_SR04_img/HC_SR04_Pinout.png)
 
