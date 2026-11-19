@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ../Core/Src/main.c:79:1:__io_putchar	16	static
 ../Core/Src/main.c:125:13:Sensor_Task	128	static
 ../Core/Src/main.c:148:5:main	8	static
@@ -7,3 +8,16 @@
 ../Core/Src/main.c:323:13:MX_GPIO_Init	48	static
 ../Core/Src/main.c:364:6:HAL_GPIO_EXTI_Callback	16	static
 ../Core/Src/main.c:377:6:Error_Handler	4	static,ignoring_inline_asm
+=======
+../Core/Src/main.c:78:1:__io_putchar	16	static
+../Core/Src/main.c:89:6:timer_start	8	static
+../Core/Src/main.c:94:6:delay_us	16	static
+../Core/Src/main.c:100:6:trig	8	static
+../Core/Src/main.c:111:19:echo	16	static
+../Core/Src/main.c:129:5:main	8	static
+../Core/Src/main.c:184:6:SystemClock_Config	88	static
+../Core/Src/main.c:231:13:MX_TIM1_Init	32	static
+../Core/Src/main.c:277:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:310:13:MX_GPIO_Init	48	static
+../Core/Src/main.c:358:6:Error_Handler	4	static,ignoring_inline_asm
+>>>>>>> 2dc6159386b0ede83ecaa9abc19ac94ab8d850e6
