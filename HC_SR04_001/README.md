@@ -41,14 +41,14 @@
 ### 2.2 Pinmap
 
 <p align="center">
-  <img src="../img/HC_SR04_001/F411RE_PinMap.png" width="80%">
+  <img src="../img/HC_SR04_001/F411RE_PinMap.png" width="50%">
 </p>
 
 
 
-## 4. 코드 수정 상세
+## 3. 코드 수정 상세
 
-###  4.1 ultrasonic.h : API
+###  3.1 ultrasonic.h : API
 
 ```c
 #ifndef ULTRASONIC_H
@@ -92,7 +92,7 @@ void Ultrasonic_OnEchoEdge(void);
 ```
 
 
-### 4.2 `ultrasonic.c` - 거리 계산 핵심
+### 3.2 `ultrasonic.c` - 거리 계산 핵심
 
 ```c
 #define US_TIMER_TICKS_PER_US 1U
@@ -415,7 +415,7 @@ static void US_Publish(uint32_t now)
 }
 ```
 
-### 4.3 `main.c` - EXTI 콜백 분기
+### 3.3 `main.c` - EXTI 콜백 분기
 
 ```c
 /* USER CODE BEGIN 4 */
@@ -524,7 +524,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 /* USER CODE END 4 */
 ```
 
-### 4.4 `stm32f4xx_it.c` / `stm32f4xx_it.h`
+### 3.4 `stm32f4xx_it.c` / `stm32f4xx_it.h`
 
 ```c
 void EXTI0_IRQHandler(void)
