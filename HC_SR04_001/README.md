@@ -608,18 +608,28 @@ void EXTI15_10_IRQHandler(void)
 
 ## 5. 결과
 
-### Scope
+### 5-1. Scope
 
--Echo Pin을 Scope로 측정 결과임.
+- Echo Pin을 Scope로 측정 결과임.
 
 <p align="center">
   <img src="../img/HC_SR04_001/Echo_Scope.jpg" width="100%">
 </p>
 
--Serial 통신으로 거리 측정 결과
+### 5-2. Serial 통신
+
+- Serial 통신으로 거리 측정 결과
 
 <p align="center">
   <img src="../img/HC_SR04_001/HC_SR04_Putty.png" width="100%">
+</p>
+
+### 5-3. 
+
+- SWV 데이터 그래프로 Trig & Echo 결과
+
+<p align="center">
+  <img src="../img/HC_SR04_001/Trig_1_Echo_Graph.png" width="100%">
 </p>
 
 
