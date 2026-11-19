@@ -46,26 +46,47 @@
 
 ## 3. CubeMX Setting
 
-<table>
-  <tr>
-    <th width="50%">CLK_set</th>
-    <th width="50%">CLK_configuration</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="../img/HC_SR04_001/CLK_set.png" width="100%">
-    </td>
-    <td align="center">
-      <img src="../img/HC_SR04_001/CLK_configuration.png" width="100%">
-    </td>
-  </tr>
-</table>
+### 3-1. CLK set
+
+<p align="center">
+  <img src="../img/HC_SR04_001/CLK_set.png" width="100%">
+  <img src="../img/HC_SR04_001/CLK_configuration.png" width="100%">
+</p>
+
+### 3-2. GPIO set
+
+PA1을 TRIG Pin으로 설정하며 `GPIO_Output`으로 설정함.
+
+PA0를 ECHO Pin으로 설정하며 *Interrupt*를 위해 `GPIO_EXTI0`로 설정함.
+*Interrupt*를 ECHO의 Rising Edge & Falling Edge를 검출하기 위해 GPIO mode를 변경함.
+
+<p align="center">
+  <img src="../img/HC_SR04_001/GPIO_set.png" width="100%">  
+</p>
+
+NVIC 창에서 Interrupt를 Add 설정함.
+
+<p align="center">
+  <img src="../img/HC_SR04_001/NVIC_check.png" width="100%">  
+</p>
+
+### 3-3. TIM1 set
+
+#### us를 설정하기 위한 TIM1 설정
+
+84MHz 주기를 Prescaler를 84-1로 분주하여 1MHz를 만들고,
+auto_reload preload를 Enable함.
+
+<p align="center">
+  <img src="../img/HC_SR04_001/TIM1_set.png" width="100%">  
+</p>
 
 
 
-## 3. 코드 수정 상세
 
-###  3.1 ultrasonic.h : API
+## 4. 코드 수정 상세
+
+###  4.1 ultrasonic.h : API
 
 ```c
 #ifndef ULTRASONIC_H
@@ -109,7 +130,7 @@ void Ultrasonic_OnEchoEdge(void);
 ```
 
 
-### 3.2 `ultrasonic.c` - 거리 계산 핵심
+### 4.2 `ultrasonic.c` - 거리 계산 핵심
 
 ```c
 #define US_TIMER_TICKS_PER_US 1U
@@ -432,7 +453,7 @@ static void US_Publish(uint32_t now)
 }
 ```
 
-### 3.3 `main.c` - EXTI 콜백 분기
+### 4.3 `main.c` - EXTI 콜백 분기
 
 ```c
 /* USER CODE BEGIN 4 */
@@ -541,7 +562,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 /* USER CODE END 4 */
 ```
 
-### 3.4 `stm32f4xx_it.c` / `stm32f4xx_it.h`
+### 4.4 `stm32f4xx_it.c` / `stm32f4xx_it.h`
 
 ```c
 void EXTI0_IRQHandler(void)
