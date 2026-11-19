@@ -38,3 +38,7 @@
 | TRIG | PA1 |
 | ECHO | PA0 |
 
+### 2.2 Pinmap
+
+
+
