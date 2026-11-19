@@ -606,3 +606,21 @@ void EXTI15_10_IRQHandler(void)
 /* USER CODE END 1 */
 ```
 
+## 5. 결과
+
+### Scope
+
+-Echo Pin을 Scope로 측정 결과임.
+
+<p align="center">
+  <img src="../img/HC_SR04_001/Echo_Scope.jpg" width="100%">
+</p>
+
+-Serial 통신으로 거리 측정 결과
+
+<p align="center">
+  <img src="../img/HC_SR04_001/HC_SR04_Putty.png" width="100%">
+</p>
+
+
+
