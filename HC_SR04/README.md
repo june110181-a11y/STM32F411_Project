@@ -3,13 +3,13 @@
 
 ## 1. HC_SR04 Theory
 
-![](../img/HC_SR04_img/HC_SR04_img.png) <img src="img/HC_SR04_img/HC_SR04_Schematic.png" width="50%">
+![](../img/HC_SR04_img/HC_SR04_img.png) <img src="../img/HC_SR04_img/HC_SR04_Schematic.png" width="50%">
 
-![](img/HC_SR04_img/HC_SR04_Pinout.png)
+![](../img/HC_SR04_img/HC_SR04_Pinout.png)
 
 음속 : 약 340m/s
 
-<img src="img/HC_SR04_img/HC_SR04_Pinout.png" width="30%"> <img src="img/HC_SR04_img/센서_이론 그림.png" width="58%">
+<img src="../img/HC_SR04_img/HC_SR04_Pinout.png" width="30%"> <img src="../img/HC_SR04_img/센서_이론 그림.png" width="58%">
 
 ![](img/HC_SR04_img/sensor_waveform_theroy.png)
 
@@ -18,19 +18,19 @@ Trig 신호는 10us 이상의 Width가 필요하고, Trig 신호 사이의 Delay
 ## 2. STM32 Implementation
 ### 2-1. CLK Setting
 
-![](img/HC_SR04_img/RCC_set.png)
+![](../img/HC_SR04_img/RCC_set.png)
 
-![](img/HC_SR04_img/CLK_Configuration.png)
+![](../img/HC_SR04_img/CLK_Configuration.png)
 
 ### 2-2. Trigger Pin / Echo Pin Set
 
 Trigger Pin을 GPIO Output으로 설정하고, User label을 설정해준다.
 
-![](img/HC_SR04_img/tirg_Pin_Set.png)
+![](../img/HC_SR04_img/tirg_Pin_Set.png)
 
 Echo Pin을 GPIO Input으로 설정하고, User label을 설정해준다.
 
-![](img/HC_SR04_img/tirg_Echo_Pin_Set.png)
+![](../img/HC_SR04_img/tirg_Echo_Pin_Set.png)
 
 #### NUCLEO-F411RE PinMap
 
@@ -147,11 +147,11 @@ while (1)
 
 Trig가 10us의 Width가 관찰된다.
 
-![](img/HC_SR04_img/trig_keep_1us.jpg)
+![](../img/HC_SR04_img/trig_keep_1us.jpg)
 
 Trig의 주기가 200us임이 관찰된다.
 
-![](img/HC_SR04_img/delay_us_trig_period_200us.jpg)
+![](../img/HC_SR04_img/delay_us_trig_period_200us.jpg)
 
 
 Trig 신호를 확인하기 위한 전체 코드이다.
