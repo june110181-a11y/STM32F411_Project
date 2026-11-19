@@ -624,7 +624,7 @@ void EXTI15_10_IRQHandler(void)
   <img src="../img/HC_SR04_001/HC_SR04_Putty.png" width="100%">
 </p>
 
-### 5-3. 
+### 5-3. SWV 데이터 그래프
 
 - SWV 데이터 그래프로 Trig & Echo 결과
 
