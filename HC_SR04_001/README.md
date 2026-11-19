@@ -44,6 +44,23 @@
   <img src="../img/HC_SR04_001/F411RE_PinMap.png" width="50%">
 </p>
 
+## 3. CubeMX Setting
+
+<table>
+  <tr>
+    <th width="50%">CLK_set</th>
+    <th width="50%">CLK_configuration</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../img/HC_SR04_001/CLK_set.png" width="100%">
+    </td>
+    <td align="center">
+      <img src="../img/HC_SR04_001/CLK_configuration.png" width="100%">
+    </td>
+  </tr>
+</table>
+
 
 
 ## 3. 코드 수정 상세
