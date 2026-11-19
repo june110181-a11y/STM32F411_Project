@@ -40,6 +40,10 @@
 
 ### 2.2 Pinmap
 
+<p align="center">
+  <img src="../img/HC_SR04_001/F411RE_PinMap.png" width="80%">
+</p>
+
 
 
 ## 4. 코드 수정 상세
